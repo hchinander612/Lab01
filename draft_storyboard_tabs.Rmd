@@ -1,5 +1,5 @@
 ---
-title: "My Storyboard at DACSS - tabs"
+title: "Remote Work in the Ninth District"
 bibliography: testVisual.bib
 output: 
   flexdashboard::flex_dashboard
@@ -7,40 +7,43 @@ output:
 
 ```{r setup, include=FALSE}
 library(flexdashboard) # always
+
 ```
 
 ## Sidebar {.sidebar}
 
+Remote work increased substantially after the COVID-19 pandemic began in 2020. This dashboard captures different aspects of the remote workforce in the states in the Federal Reserve's Ninth District. 
 
 Preparing the dashboard based on the instructions given at @magallanes_reyes_data_2022, and @aden-buie_flexdashboard_2023.
 
 ## Column {.tabset .tabset-fade}
 
 
-### Worst barplot
+### Univariate Categorical Plot 
 
 ```{r}
-readRDS("del1Draft.rds")
+readRDS("unicat.rds")
+```
+
+### Numerical Histogram Plot
+
+```{r,fig.width=7}
+readRDS("uninum.rds")
 ```
 
 
-### Worst histogram
+### Categorical x Categorical Plot
 
 ```{r}
-readRDS("del2Draft.rds")
-```
-
-### Worst scatterplot
-
-```{r}
-readRDS("del3Draft.rds")
+readRDS("catcat.rds")
 ```
 
 
-### Worst map
+### County Map Plot
 
-```{r}
-readRDS("del4Draft.rds")
+```{r,fig.height=5,fig.width=10}
+
+readRDS("map.rds")
 ```
 
 
