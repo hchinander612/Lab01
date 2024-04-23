@@ -14,7 +14,9 @@ library(flexdashboard) # always
 
 Remote work increased substantially after the COVID-19 pandemic began in 2020. This dashboard captures different aspects of the remote workforce in the states in the Federal Reserve's Ninth District. 
 
-Preparing the dashboard based on the instructions given at @magallanes_reyes_data_2022, and @aden-buie_flexdashboard_2023.
+Preparing the dashboard based on the instructions given at @magallanes_reyes_data_2022, and @aden-buie_flexdashboard_2023. 
+
+You can find the code for this dashboard here: https://github.com/hchinander612/Lab01
 
 ## Column {.tabset .tabset-fade}
 
@@ -42,9 +44,14 @@ readRDS("catcat.rds")
 ### County Map Plot
 
 ```{r,fig.height=5,fig.width=10}
-
 readRDS("map.rds")
 ```
 
 
 ### References 
+
+```{r}
+
+
+
+```
